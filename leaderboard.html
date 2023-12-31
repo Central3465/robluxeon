@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Robluxeon</title>
+    <title>Leaderboard - Robluxeon</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1184597057382666301/1191017998568398898/robluxion.jpeg?ex=65a3e8f2&is=659173f2&hm=7736202198afbd9e8da778b8996a0c94aa0f09d6f020d3f622319096770fb64d&">
     <style>
         body {
@@ -51,12 +51,14 @@
             flex-grow: 1;
             padding: 20px;
             font-family: Arial;
-            font-weight: Bold;
             font-size: 25px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
         }
 
         main h1 {
-            color: red;
+            color: Red;
         }
 
         main h2 {
@@ -67,6 +69,26 @@
             max-width: 100%;
             height: auto;
             margin-top: 20px;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: 20px;
+            width: calc(100% - 220px); /* Adjusted width to account for aside width */
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333; /* dark red */
+            color: white;
         }
     </style>
 </head>
@@ -88,11 +110,31 @@
     </aside>
 
     <main>
-        <h1>Your Statistics</h1>
-        <p>Explore and analyze your statistics here.</p>
-        <hr>
-        <h2>Access Denied</h2>
-        <p>You do not have permission to view statistics.</p>
+        <h1>Leaderboard Page</h1>
+        <p>Explore the most online members and their spent minutes.</p>
+        <!-- Insert your leaderboard content here... -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Minutes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Player1</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Player2</td>
+                    <td>1000</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
     </main>
 </body>
 
