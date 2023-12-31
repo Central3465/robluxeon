@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard - Robluxeon</title>
+    <title>Age Check - Robluxeon</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1184597057382666301/1191017998568398898/robluxion.jpeg?ex=65a3e8f2&is=659173f2&hm=7736202198afbd9e8da778b8996a0c94aa0f09d6f020d3f622319096770fb64d&">
     <style>
         body {
@@ -51,7 +51,7 @@
             flex-grow: 1;
             padding: 20px;
             font-family: Arial;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: bold;
             color: white;
             text-align: center;
@@ -71,24 +71,33 @@
             margin-top: 20px;
         }
 
-        table {
-            margin-left: auto;
-            margin-right: 20px;
-            width: calc(100% - 220px); /* Adjusted width to account for aside width */
-            border-collapse: collapse;
-            margin-top: 20px;
-            width: 80%;
+        form {
+            margin: 0 auto; /* Center the form */
+            max-width: 400px; /* Adjusted width */
         }
 
-        th, td {
-            border: 1px solid #555;
+        input {
+            width: calc(100% - 20px); /* Adjusted width to be closer to the right side */
             padding: 10px;
-            text-align: left;
+            margin-bottom: 10px;
+            box-sizing: border-box;
         }
 
-        th {
-            background-color: #333; /* dark red */
+        input ID {
+            text-align: center;
+        }
+
+        button {
+            background-color: grey; /* dark blue */
             color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333; /* darker blue */
         }
     </style>
 </head>
@@ -110,41 +119,23 @@
     </aside>
 
     <main>
-        <h1>Leaderboard Page</h1>
-        <p>Explore the most online members and their spent minutes.</p>
-        <!-- Insert your leaderboard content here... -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Player</th>
-                    <th>Minutes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Central3465</td>
-                    <td>1200</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>xba_ii</td>
-                    <td>1000</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>hairyrobloxdude</td>
-                    <td>800</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>anyrandomstrangers</td>
-                    <td>750</td>
-                </tr>
-                <!-- Add more rows as needed -->
-            </tbody>
-        </table>
+        <h1>Age Check</h1>
+        <p>Your organization seeks to conduct an age verification check to confirm that you are above the age of 13.</p>
+        <p>Kindly provide your age in the designated field and proceed to complete the following form.</p>
+        <!-- Insert your age check content here... -->
+        <form>
+            <label for="age">Enter Your Age:</label>
+            <br>
+            <input type="number" id="age" name="age" required>
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+        <form>
+            <div>Kindly provide a government-issued ID (Passport, ID, Driving License, etc) to prove you are above the age limit.</div>
+            <br>
+            <input type="file" id="myFile" name="filename">
+            <button type="submit">Submit</button>
+        </form>
     </main>
 </body>
 
