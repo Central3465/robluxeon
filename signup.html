@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1184597057382666301/1191017998568398898/robluxion.jpeg?ex=65a3e8f2&is=659173f2&hm=7736202198afbd9e8da778b8996a0c94aa0f09d6f020d3f622319096770fb64d&">
+    <title>Sign Up - Robluxeon</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* dark blue */
+            color: red;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            font-weight: Bold;
+        }
+
+        form {
+            background-color: #333; /* dark red */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #555;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #1a1a1a; /* dark blue */
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333; /* darker blue */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">
+        <button>Go Back</button>
+    </a>
+    <form>
+        <h2>Sign Up for Robluxeon</h2>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <a href="login.html">
+        <button>Log In</button>
+    </a>
+</body>
+
+</html>
